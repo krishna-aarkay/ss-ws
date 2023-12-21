@@ -1,3 +1,3 @@
 #!/bin/bash
-RRR=$(date)
+RRR=$(date;ls)
 echo "Preasent date is::$RRR"
