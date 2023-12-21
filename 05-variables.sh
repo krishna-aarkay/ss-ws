@@ -2,5 +2,5 @@
 echo "Please enter your username:"
 read uname
 echo "Please enater the password:"
-read passwd
+read -s passwd
 echo "The username is: ${uname}, and password is: ${passwd}"
