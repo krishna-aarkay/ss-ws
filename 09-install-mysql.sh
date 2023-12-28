@@ -8,7 +8,7 @@ else
     echo "You are ROOT user"
 fi
 
-yum install mysqld -y
+yum install mysql -y
 if [ $? -ne 0 ]
 then
     echo "Installation faild"
