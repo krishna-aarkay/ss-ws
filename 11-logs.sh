@@ -2,6 +2,8 @@
 ID=$(id -u)
 
 echo "Sript name:: $0"
+TIMESTAMP=$(date +%F-%H-%M-%S)
+LOGFILE=/tmp/$0-$TIMESTAMP.log
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -21,10 +23,10 @@ else
     echo "You are ROOT user"
 fi
 
-yum install mysql -y
+yum install mysql -y &>> $LOGFILE
 
 VALIDATE $? "MySql"
 
-yum install git -y
+yum install git -y &>> $LOGFILE
 
 VALIDATE $? "git"
