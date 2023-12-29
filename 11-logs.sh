@@ -26,10 +26,10 @@ else
     echo -e "$G You are ROOT user $N"
 fi
 
-yum install mysql -y &>> $LOGFILE
+yum install mysql1 -y &>> $LOGFILE
 
-VALIDATE $? "MySqll"
+VALIDATE $? "MySql"
 
-yum install git -y &>> $LOGFILE
+yum install git1 -y &>> $LOGFILE
 
 VALIDATE $? "git"
