@@ -8,7 +8,7 @@ LOGFILE=/tmp/$0-$TIMESTAMP.log
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "$2 \e[31m Installation faild \e[0m"
+        echo '$2 "\e[31m" Installation faild "\e[0m"'
         exit 1
     else
         echo "$2 \e[32m Installation successful \e[0m"
