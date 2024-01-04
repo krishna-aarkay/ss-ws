@@ -9,7 +9,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 VALIDATE(){
-    if [ if $1 -ne 0 ]
+    if [ $1 -ne 0 ]
     then
         echo -e " $2 ... $R FAILED $N"
     else
