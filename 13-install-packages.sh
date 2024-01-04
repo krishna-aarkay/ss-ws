@@ -11,6 +11,6 @@ else
     echo -e "$G Hola:: You are root user $N"
 fi
 
-echo "ALL arguments passed::$G $@ $N"
-echo "Total arguments passed::$G $# $N"
+echo -e "ALL arguments passed::$G $@ $N"
+echo -e "Total arguments passed::$G $# $N"
 
