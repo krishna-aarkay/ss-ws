@@ -10,3 +10,7 @@ then
 else
     echo -e "$G Hola:: You are root user $N"
 fi
+
+echo "ALL arguments passed:: $@"
+echo "Total arguments passed:: $#"
+
