@@ -32,7 +32,7 @@ do
         yum install $package -y
         VALIDATE $? "Installation of $package"
     else
-        echo "$pacjage is already installed ... $Y SKIPPING $N"
+        echo -e "$pacjage is already installed ... $Y SKIPPING $N"
     fi
 
 
